@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Sovery and Sweet</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#ffb3d9,#ffe0f0,#fff2b6);
+    color:#333;
+}
+
+/* navbar */
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 8%;
+    position:sticky;
+    top:0;
+    backdrop-filter:blur(12px);
+    background:rgba(255,255,255,.7);
+    z-index:100;
+}
+
+.logo{
+    font-size:1.5rem;
+    font-weight:800;
+    color:#ff4d8d;
+}
+
+/* hero */
+
+.hero{
+    min-height:90vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:60px;
+    padding:50px 8%;
+    flex-wrap:wrap;
+}
+
+.hero-image img{
+    width:100%;
+    max-width:420px;
+    border-radius:30px;
+    box-shadow:0 20px 40px rgba(0,0,0,.15);
+}
+
+.hero-content{
+    max-width:550px;
+}
+
+.tag{
+    display:inline-block;
+    padding:8px 18px;
+    border-radius:999px;
+    background:white;
+    color:#ff4d8d;
+    font-weight:600;
+    margin-bottom:15px;
+}
+
+.hero-content h1{
+    font-size:3.5rem;
+    line-height:1.1;
+    margin-bottom:15px;
+}
+
+.hero-content p{
+    color:#555;
+    line-height:1.8;
+    margin-bottom:20px;
+}
+
+.price{
+    font-size:2.2rem;
+    color:#ff7b00;
+    font-weight:800;
+    margin-bottom:25px;
+}
+
+.order-btn{
+    display:inline-block;
+    text-decoration:none;
+    color:white;
+    background:linear-gradient(45deg,#ff4d8d,#ff73a7);
+    padding:15px 35px;
+    border-radius:999px;
+    font-weight:700;
+    transition:.3s;
+}
+
+.order-btn:hover{
+    transform:translateY(-4px);
+}
+
+/* card */
+
+.section{
+    padding:70px 8%;
+}
+
+.card{
+    background:rgba(255,255,255,.75);
+    backdrop-filter:blur(15px);
+    border-radius:30px;
+    padding:40px;
+    box-shadow:0 15px 35px rgba(0,0,0,.08);
+}
+
+.card h2{
+    color:#ff4d8d;
+    margin-bottom:20px;
+}
+
+.card ul{
+    line-height:2;
+    padding-left:20px;
+}
+
+/* social */
+
+.socials{
+    display:flex;
+    justify-content:center;
+    gap:15px;
+    flex-wrap:wrap;
+    margin-top:25px;
+}
+
+.socials a{
+    text-decoration:none;
+    color:white;
+    background:#ff4d8d;
+    padding:12px 25px;
+    border-radius:999px;
+    font-weight:600;
+}
+
+/* footer */
+
+footer{
+    text-align:center;
+    padding:30px;
+    margin-top:40px;
+    background:#ff4d8d;
+    color:white;
+}
+
+@media(max-width:768px){
+
+.hero-content h1{
+    font-size:2.5rem;
+}
+
+.hero{
+    text-align:center;
+}
+
+}
+
+</style>
+</head>
+<body>
+
+<nav>
+    <div class="logo">🍡 Sovery and Sweet</div>
+</nav>
+
+<section class="hero">
+
+    <div class="hero-image">
+        <img src="mochi.jpg" alt="Sweet Gururin Mochi">
+    </div>
+
+    <div class="hero-content">
+
+        <span class="tag">Dessert Manis Kekinian</span>
+
+        <h1>Sweet Gururin Mochi</h1>
+
+        <p>
+            Mochi unik berbentuk gulungan menyerupai sushi dengan rasa manis,
+            tekstur lembut, dan tampilan yang lucu. Cocok untuk teman santai,
+            hadiah, ataupun camilan favorit sehari-hari.
+        </p>
+
+        <div class="price">Rp15.000</div>
+
+        <a href="LINK_WA" class="order-btn">
+            🛒 Pesan Sekarang
+        </a>
+
+    </div>
+
+</section>
+
+<section class="section">
+
+    <div class="card">
+
+        <h2>Kenapa Memilih Sweet Gururin Mochi?</h2>
+
+        <ul>
+            <li>✨ Bentuk unik seperti sushi</li>
+            <li>🍡 Tekstur lembut dan kenyal</li>
+            <li>💖 Rasa manis yang pas</li>
+            <li>🎁 Cocok untuk hadiah dan hampers</li>
+            <li>📸 Estetik untuk foto dan konten sosial media</li>
+        </ul>
+
+    </div>
+
+</section>
+
+<section class="section">
+
+    <div class="card" style="text-align:center;">
+
+        <h2>Info Lebih Lanjut</h2>
+
+        <p>Hubungi kami melalui media sosial berikut.</p>
+
+        <div class="socials">
+
+            <a href="LINK_WA">WhatsApp</a>
+            <a href="LINK_IG">Instagram</a>
+            <a href="LINK_TIKTOK">TikTok</a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<footer>
+    Made with ❤️ by Team Sovery and Sweet
+</footer>
+
+</body>
+</html>
