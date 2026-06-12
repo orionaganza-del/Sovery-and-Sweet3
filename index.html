@@ -161,7 +161,25 @@ footer{
     background:#ff4d8d;
     color:white;
 }
+.gallery-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+    margin-top:20px;
+}
 
+.gallery-grid img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+    border-radius:20px;
+    transition:.3s;
+    box-shadow:0 10px 25px rgba(0,0,0,.1);
+}
+
+.gallery-grid img:hover{
+    transform:scale(1.05);
+}
 @media(max-width:768px){
 
 .hero-content h1{
@@ -254,6 +272,25 @@ footer{
             karena setiap senyuman yang tercipta dari produk kami merupakan
             motivasi terbesar bagi Sovery and Sweet untuk terus berkembang.
         </p>
+
+    </div>
+
+</section>
+<section class="section">
+
+    <div class="card">
+
+        <h2>📸 Galeri Sweet Gururin Mochi</h2>
+
+        <div class="gallery-grid">
+
+            <img src="mochi1.jpg" alt="Sweet Gururin Mochi">
+            <img src="mochi2.jpg" alt="Sweet Gururin Mochi">
+            <img src="mochi3.jpg" alt="Sweet Gururin Mochi">
+            <img src="mochi4.jpg" alt="Sweet Gururin Mochi">
+            <img src="mochi5.jpg" alt="Sweet Gururin Mochi">
+
+        </div>
 
     </div>
 
